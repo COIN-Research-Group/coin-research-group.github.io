@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Active projects in the COIN Research Group
+description: Active projects in the COIN Research Group and the Madison Art Collection
 nav: true
 nav_order: 3
 display_categories:
