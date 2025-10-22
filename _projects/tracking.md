@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 3D Modeling and Digital Twins
-description: a project that redirects to another website
-img: assets/img/7.jpg
-importance: 3
+title: Tracking Sawhill
+description: Following Sawhill's coins from 1979 to the present
+img: assets/img/1.jpg
+importance: 4
 category: work
 ---
 

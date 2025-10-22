@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Auction Catalog Digitization
+description: The source material for recovering Sawhill
+img: assets/img/scanning_project/scanners.jpg
+importance: 5
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
