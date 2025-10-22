@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-recovering-coin-provenance-with-deep-metric-learning",
+        },{id: "post-coin-identification-with-deep-metric-learning",
         
-          title: "Recovering Coin Provenance with Deep Metric Learning",
+          title: "Coin Identification with Deep Metric Learning",
         
         description: "Jackson Greer (CS &#39;25) presents at JMU CS Research Day",
         section: "Posts",
