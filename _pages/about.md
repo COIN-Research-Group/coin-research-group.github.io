@@ -28,4 +28,4 @@ Upon his death in 1976, Dr. John Sawhill willed his life's possessions to the Ja
 
 The **Recovering Sawhill Project** honors the legacy of Drs. John and Bessie Sawhill by utilizing the remaining collection to conduct modern numismatic research in provenance recovery, support undergraduate numismatic internships, and utilize 3D modeling techniques to facilitate exhibits and outreach.
 
-Please browse this site to learn about our current work and learn how you might contribute. The project is a joint effort of the [JMU COIN Research Group](https://github.com/COIN-Research-Group/) and [Madison Art Collection](https://www.jmu.edu/madisonart/index.shtml). Site maintained by the [Curator of Coins](https://www.jmu.edu/madisonart/people/forsyth-jason.shtml).
+Please browse this site to learn about our current work and how you might contribute. The project is a joint effort of the [JMU COIN Research Group](https://github.com/COIN-Research-Group/) and [Madison Art Collection](https://www.jmu.edu/madisonart/index.shtml). Site maintained by the [Curator of Coins](https://www.jmu.edu/madisonart/people/forsyth-jason.shtml).
