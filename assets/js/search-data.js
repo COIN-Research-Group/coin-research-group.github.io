@@ -49,31 +49,31 @@ ninja.data = [{
             },},{id: "news-site-launch",
           title: 'Site Launch!',
           description: "",
-          section: "News",},{id: "projects-3d-modeling-and-digital-twins",
-          title: '3D Modeling and Digital Twins',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_modeling/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_scanning/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_tracking/";
-            },},{id: "projects-coin-attribution",
+          section: "News",},{id: "projects-coin-attribution",
           title: 'Coin Attribution',
           description: "Updating the Sawhill Collection with modern numismatic references",
           section: "Projects",handler: () => {
               window.location.href = "/projects/attribution/";
+            },},{id: "projects-3d-modeling-and-fabrication",
+          title: '3D Modeling and Fabrication',
+          description: "Accessible models for research and outreach",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/modeling/";
             },},{id: "projects-provenance-recovery",
           title: 'Provenance Recovery',
           description: "Finding the origins of the Sawhill Collection",
           section: "Projects",handler: () => {
               window.location.href = "/projects/provenance_recovery/";
+            },},{id: "projects-auction-catalog-digitization",
+          title: 'Auction Catalog Digitization',
+          description: "The source material for recovering Sawhill",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/scanning/";
+            },},{id: "projects-tracking-sawhill",
+          title: 'Tracking Sawhill',
+          description: "Following Sawhill&#39;s coins from 1979 to the present",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tracking/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
