@@ -1,0 +1,1 @@
+Virginia "Ginny" Soenksen is the Director of the Madison Art Collection and the Lisanby Museum at James Madison University. She holds an M.A. in Art History from Tufts University and a B.S. in Psychology from the University of Mary Washington.
