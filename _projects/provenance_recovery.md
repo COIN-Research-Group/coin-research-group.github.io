@@ -28,7 +28,7 @@ Every coin has a history. Minted thousands of years ago these small objects wher
 </div>
 
 
-While we know Dr. Sawhill began his collection in the 1930s, we have little information about where he purchased his coins. However, we do have his personal auction catalogs, correspondence with dealers, and purchase invoices. Our current project seeks to recover this lost provenance information by comparing his personal auction catalogs to high-resolution scans of the existing collection. We utilize current approach in deep learning methods with custom loss functions to tune models towards the individual differences between unique coins. 
+While we know Dr. Sawhill began his collection in the 1930s, we have little information about where he purchased his coins. However, we do have his personal auction catalogs, correspondence with dealers, and purchase invoices. Our current project seeks to recover this lost provenance information by comparing his personal auction catalogs to high-resolution scans of the existing collection. We utilize deep learning methods with custom loss functions to tune models towards the individual differences between unique coins. 
 
 Our latest work is available here:
 - [Jackson Greer Presentation at CS Research Day](/blog/2025/jackson/)
