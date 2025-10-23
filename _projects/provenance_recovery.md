@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Provenance Recovery
-description: Finding the origins of the Sawhill Collection
+description: Uncovering the origins of the Sawhill Collection
 img: assets/img/provenance_project/coin-matching.jpg
 importance: 1
 category: work
