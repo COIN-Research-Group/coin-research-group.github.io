@@ -61,7 +61,7 @@ ninja.data = [{
               window.location.href = "/projects/modeling/";
             },},{id: "projects-provenance-recovery",
           title: 'Provenance Recovery',
-          description: "Finding the origins of the Sawhill Collection",
+          description: "Uncovering the origins of the Sawhill Collection",
           section: "Projects",handler: () => {
               window.location.href = "/projects/provenance_recovery/";
             },},{id: "projects-auction-catalog-digitization",
