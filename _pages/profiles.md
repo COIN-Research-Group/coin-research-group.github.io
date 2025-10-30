@@ -83,7 +83,7 @@ profiles:
     category: alumni
     name: Maria Lo Presti
     degree: "Engineering '25"
-    project: "[Ancient Sicilian Numismatics](/projects/attribution) and [3D Scanning & Visualization](/projects/modeling)"
+    project: "[Ancient Sicilian Numismatics](/projects/attribution) and [3D Fabrication](/projects/modeling)"
     employer: "Engineer at Loudoun County Water, Planning & Water Resources"
     more_info: >
 
