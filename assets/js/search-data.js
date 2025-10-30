@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-people",
           title: "people",
-          description: "Faculty and Students in the COIN Research Group",
+          description: "Faculty, Students, and Alumni of the Recovering Sawhill Project",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
