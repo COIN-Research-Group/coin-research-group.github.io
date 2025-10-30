@@ -58,7 +58,7 @@ profiles:
     content: #about_milea.md
     image_circular: false
     category: current students
-    name: Alice Milea-Coibanu
+    name: Alice Milea-Ciobanu
     degree: Computer Science '26
     project: "[3D Modeling and Fabrication](/projects/modeling)"
     category: current students
