@@ -1,1 +1,0 @@
-If you're seeing this page, then update or delete about_einstein.md

@@ -1,1 +1,0 @@
-Maria Lo Presti graduated from James Madison University in 2025 with a BS in Engineering. She is currently an Engineer with Loudoun County Water, Planning & Water Resources in Northern Virginia

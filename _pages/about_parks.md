@@ -1,1 +1,0 @@
-Katie Parks graduated in 2024 with a BA in Art History and Museum Studies. Currently, she is an Registration Assistant at the Virginia Museum of Fine Arts in Richmond, Virginia.
