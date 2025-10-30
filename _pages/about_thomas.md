@@ -1,0 +1,1 @@
+Juliette Thomas is currently pursuing a B.S. in Earth Science at James Madison University (Class of 2027). As the Madison Art Collection intern and member of the COIN Research Group, she assists with collection management and digital documentation of ancient coins. Her background in Earth Science brings a unique geological perspective to the study of ancient numismatics.
