@@ -9,34 +9,46 @@ layout: page
         {% if page.profiles | map: "category" | uniq | contains: category %}
         <h2 class="category-header">{{ category | capitalize }}</h2>
         <div class="category-section">
-          {% assign category_profiles = page.profiles | where: "category", category %}
-          {% for profile in category_profiles %}
-            <hr>
-            <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-          {% endfor %}
+          <div class="profiles-grid">
+            {% assign category_profiles = page.profiles | where: "category", category %}
+            {% for profile in category_profiles %}
+              <div class="profile-card" data-profile-id="{{ forloop.index }}">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  {% if profile.image_circular %}
+                    {% assign profile_image_class = 'profile-image rounded-circle' %}
+                  {% else %}
+                    {% assign profile_image_class = 'profile-image rounded' %}
+                  {% endif %}
+                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=profile.image %}
+                {% endif %}
+                
+                <div class="profile-info">
+                  <h3 class="profile-name">{{ profile.name }}</h3>
+                  {% if profile.project %}
+                    <div class="profile-project">{{ profile.project | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                  {% endif %}
+                  {% if profile.category == 'faculty' %}
+                    <div class="profile-title">{{ profile.title | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                  {% else %}
+                    <div class="profile-degree">{{ profile.degree | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                  {% endif %}
+                  {% if profile.employer %}
+                    <div class="profile-employer">{{ profile.employer | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                  {% endif %}
+                  <div class="profile-details" id="profile-{{ category | slugify }}-{{ forloop.index }}">
+                    {% if profile.content %}
+                      {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                      {{ profile_content | markdownify }}
+                    {% endif %}
+                  </div>
+                  {% if profile.more_info %}
+                    <div class="more-info">{{ profile.more_info }}</div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
         </div>
         {% endif %}
       {% endfor %}
@@ -48,6 +60,92 @@ layout: page
 .category-header {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: var(--global-theme-color);
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-card {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.profile-name {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--global-text-color);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-project {
+  font-size: 0.85rem;
+  color: var(--global-theme-color);
+  margin-bottom: 0.25rem;
+  order: 1;
+}
+
+.profile-title, .profile-degree {
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  margin-bottom: 0.25rem;
+  font-style: italic;
+  order: 2;
+}
+
+.profile-employer {
+  font-size: 0.85rem;
+  color: var(--global-text-color);
+  margin-bottom: 0.5rem;
+  order: 3;
+}
+
+.profile-project a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.profile-project a:hover {
+  text-decoration: underline;
+}
+
+.profile-details {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  display: none;
+}
+
+.profile-card:hover .profile-details {
+  display: block;
+}
+
+.category-section {
+  margin-bottom: 3rem;
   color: var(--global-theme-color);
 }
 .category-section {
