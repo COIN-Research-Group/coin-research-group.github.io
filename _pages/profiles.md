@@ -39,7 +39,7 @@ profiles:
     image_circular: false
     category: current students
     name: Trevor Schonbrun
-    degree: Engineering '25
+    degree: Engineering '27
     project: "[Machine Learning for Provenance Recovery](/projects/provenance_recovery)"
     more_info: >
 
