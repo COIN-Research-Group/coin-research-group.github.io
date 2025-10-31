@@ -10,7 +10,7 @@ profiles:
   # Faculty profiles
   - align: right
     image: forsyth_profile.jpg
-    content: about_forsyth.md
+    content: #about_forsyth.md
     image_circular: false # crops the image to make it circular
     category: faculty
     title: Associate Professor of Engineering and Curator of Coins for the Madison Art Collection
@@ -18,7 +18,7 @@ profiles:
 
   - align: left
     image: sprague_profile.jpg
-    content: about_sprague.md
+    content: #about_sprague.md
     image_circular: false # crops the image to make it circular
     category: faculty
     title: Professor of Computer Science
@@ -26,7 +26,7 @@ profiles:
 
   - align: right
     image: soenksen_profile_pic.jpg
-    content: about_soenksen.md
+    content: #about_soenksen.md
     image_circular: false # crops the image to make it circular
     category: faculty
     title: Director of the Madison Art Collection and Lisanby Museum
