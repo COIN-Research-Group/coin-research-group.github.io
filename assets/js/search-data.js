@@ -41,12 +41,7 @@ ninja.data = [{
             window.location.href = "/blog/2025/jackson/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-site-launch",
+      },{id: "news-site-launch",
           title: 'Site Launch!',
           description: "",
           section: "News",},{id: "projects-coin-attribution",
