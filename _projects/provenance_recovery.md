@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-Every coin has a history. Minted thousands of years ago these small objects where used in the everyday life of ancient persons. One day they were lost or buried only to be preserved by the Earth until found by future collectors. In modern times, sales of these coins have been preserved in auction catalogs that help us trace their *provenance* or history of ownership. This modern information completes the link between our ancient ancestors and the modern holder of any object.
+Every coin has a history. Minted thousands of years ago, these small objects were used in the everyday life of ancient persons. One day they were lost or buried, only to be preserved by the Earth until found by future collectors. In modern times, sales of these coins have been preserved in auction catalogs that help us trace their *provenance* or history of ownership. This modern information completes the link between our ancient ancestors and the modern holder of any object.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
