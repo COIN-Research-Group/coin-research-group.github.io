@@ -22,6 +22,6 @@ category: work
     </div>
 </div>
 
-Included in the original bequeth is Dr. Sawhill's lifetime collection of auction catalogs and ANS periodicals. Our earliest catalog is ADOLPH E. CAHN, Auktion 83,  July 17, 1993, and the collection continues until his death in 1976. A full record of our catalogs are available [online](/assets/pdf/sawhill-catalogs.pdf).
+Included in the original bequest is Dr. Sawhill's lifetime collection of auction catalogs and ANS periodicals. Our earliest catalog is ADOLPH E. CAHN, Auktion 83, July 17, 1933, and the collection continues until his death in 1976. A full record of our catalogs is available [online](/assets/pdf/sawhill-catalogs.pdf).
 
 We are currently working to digitize these catalogs to support our [Provenance Recovery project](/projects/provenance_recovery/). If you believe there are key catalogs we should target first, or there are important/rare catalogs that should be preserved, please email the [Curator of Coins for the Madison Art Collection](https://www.jmu.edu/madisonart/people/forsyth-jason.shtml).
