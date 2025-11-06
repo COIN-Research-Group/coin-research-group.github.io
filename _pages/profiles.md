@@ -14,6 +14,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     category: faculty
     title: Associate Professor of Engineering and Curator of Coins for the Madison Art Collection
+    name: Dr. Jason Forsyth
     more_info: >
 
   - align: left
@@ -22,6 +23,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     category: faculty
     title: Professor of Computer Science
+    name: Dr. Nathan Sprague
     more_info: >
 
   - align: right
@@ -30,6 +32,16 @@ profiles:
     image_circular: false # crops the image to make it circular
     category: faculty
     title: Director of the Madison Art Collection and Lisanby Museum
+    name: Virginia "Ginny" Soenksen
+    more_info: >
+
+  - align: left
+    image: harvey_profile.jpeg
+    content: #about_harvey.md
+    image_circular: false # crops the image to make it circular
+    category: faculty
+    title: Assistant Professor of Art History and Associate Director of the Madison Art Collection
+    name: Dr. Maria Harvey
     more_info: >
 
   # Current Students
