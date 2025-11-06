@@ -58,6 +58,11 @@ function dateFormatter(value) {
 
 function urlFormatter(value) {
     if (!value) return '';
+    if (Array.isArray(value)) {
+        return value.map((url, index) => 
+            `<a href="${url}" target="_blank"><i class="fas fa-external-link-alt"></i>${index + 1}</a>`
+        ).join(' ');
+    }
     return '<a href="' + value + '" target="_blank"><i class="fas fa-external-link-alt"></i></a>';
 }
 
