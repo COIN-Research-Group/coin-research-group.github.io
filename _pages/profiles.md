@@ -27,7 +27,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: soenksen_profile_pic.jpg
+    image: soenksen_profile_pic.jpeg
     content: #about_soenksen.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -44,6 +44,15 @@ profiles:
     name: Dr. Maria Harvey
     more_info: >
 
+  - align: right
+    image: jmu_logo.jpg
+    content: #about_carrara.md
+    image_circular: false # crops the image to make it circular
+    category: faculty
+    title: Assistant Professor of History
+    name: Dr. Eva Carrara
+    more_info: >
+
   # Current Students
   - align: left
     image: jmu_logo.jpg
@@ -56,7 +65,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: jmu_logo.jpg
+    image: juliette_profile.jpeg
     content: #about_thomas.md
     image_circular: false
     category: current students
