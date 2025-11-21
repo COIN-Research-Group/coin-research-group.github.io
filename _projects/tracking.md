@@ -27,7 +27,7 @@ While a boon to collectors, the sale of Sawhill's collection represents a distin
 ### Table of Recent Sawhill Coin Sales
 <table id="table" 
   data-toggle="table" 
-  data-url="{{ '/assets/json/sawhill-temp.json' | relative_url }}"
+  data-url="{{ '/assets/json/sawhill-data.json' | relative_url }}"
   data-pagination="true"
   data-search="true"
   data-page-size="10"
