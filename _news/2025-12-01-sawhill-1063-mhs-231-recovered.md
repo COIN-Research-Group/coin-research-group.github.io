@@ -1,5 +1,5 @@
 ---
-title: "Sawhill 1063 - MHS 231 Recovered!"
+title: "Sawhill Lot 1063 / Adams Lot 231 Recovered!"
 date: 2025-12-01
 layout: post
 description: The Madison Art Collection has reacquired a coin from the Sawhill and Adams Collection.
@@ -28,6 +28,8 @@ images:
 
 ### President John Quincy Adams’s Coins Return to President Madison’s University
 The Madison Art Collection has successfully reacquired Lot 1063 from the Dr. John Sawhill Collection! This hemidrachm of Argos has a storied ownership, being part of the [President John Quincy Adams and Descendants Collection](https://archive.org/details/partimassachuset1971stac) and the [BCD Collection](https://conservatoricoins.com/ex-bcd-collection-bibliography/), one of the largest ancient Greek collections ever formed.
+
+Our coin is a hemidrachm of Argos in the Peloponnese of southern Greece. Issued between 85–50 BCE, this small coin shows the foreparts of a wolf on the obverse (mostly worn away), but on the reverse it has an array of symbols: "A" indicating the city of Argos, Greek letters for the magistrates who issued the coin, and the twin caps of the Dioscuri (Castor and Pollux) below. This coin is somewhat rare with these symbols, with only one known example in <a href="https://www.coinarchives.com/a/openlink.php?l=148777|177|1169|665d92aa06e293fdb45ec118e1c206d5" target="_blank" rel="noopener">CoinArchives</a>.
 
 Amazingly, the auction came with the collector’s tickets that enable us to trace the coin’s direct ownership from Sawhill’s purchase at the Adams sale in 1971, to BCD’s acquisition of Sawhill’s coin in 1979, and finally its “return home” to James Madison University. The full “paper trail” is described [below](#tracking-adams-sawhill-and-bcd).
 
@@ -80,4 +82,4 @@ We are grateful to [Aaron Berk of Harlan J Berk Ltd.](https://www.hjbltd.com/#!/
     </div>
 </div>
 
-Given the relatively sparse photography in the 1971 Adams Sale and the 1979 Sawhill Sale, it would have been impossible to recover this information without this important "paper trail." If you wish to learn more about our work with the remaining Sawhill Collection, please check out our [Projects Page](/projects/).
+Given the relatively sparse photography in the 1971 Adams Sale and the 1979 Sawhill Sale, it would have been impossible to recover this information without this important paper trail. If you wish to learn more about our work with the remaining Sawhill Collection, please check out our [Projects Page](/projects/).
