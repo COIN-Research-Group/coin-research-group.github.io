@@ -45,7 +45,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: jmu_logo.jpg
+    image: eva_profile.jpg
     content: #about_carrara.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -55,7 +55,7 @@ profiles:
 
   # Current Students
   - align: left
-    image: jmu_logo.jpg
+    image: trevor_profile.jpg
     content: #about_schonbrun.md
     image_circular: false
     category: current students
