@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-coin-identification-with-deep-metric-learning",
+        },{id: "post-x-ray-imaging-to-identify-ancient-fakes",
+        
+          title: "X-Ray Imaging to Identify Ancient Fakes",
+        
+        description: "A collaboration with the Madison Accelerator Lab helps identify fourrees in the collection",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/xray-mal/";
+          
+        },
+      },{id: "post-coin-identification-with-deep-metric-learning",
         
           title: "Coin Identification with Deep Metric Learning",
         
