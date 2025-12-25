@@ -1,13 +1,10 @@
 ---
 layout: page
-title: submenus
-nav: false
+title: archives
+nav: true
 nav_order: 8
-dropdown: false
+dropdown: true
 children:
-  - title: bookshelf
-    permalink: /books/
-  - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: Black Cabinet
+    permalink: /black-cabinet/
 ---
