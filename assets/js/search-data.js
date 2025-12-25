@@ -30,7 +30,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-x-ray-imaging-to-identify-ancient-fakes",
+        },{id: "dropdown-black-cabinet",
+              title: "Black Cabinet",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/black-cabinet/";
+              },
+            },{id: "post-x-ray-imaging-to-identify-ancient-fakes",
         
           title: "X-ray Imaging to Identify Ancient Fakes",
         
