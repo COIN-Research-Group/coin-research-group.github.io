@@ -32,9 +32,9 @@ ninja.data = [{
           },
         },{id: "post-x-ray-imaging-to-identify-ancient-fakes",
         
-          title: "X-Ray Imaging to Identify Ancient Fakes",
+          title: "X-ray Imaging to Identify Ancient Fakes",
         
-        description: "A collaboration with the Madison Accelerator Lab helps identify fourrees in the collection",
+        description: "A collaboration with the Madison Accelerator Lab helps identify fourrées in the collection",
         section: "Posts",
         handler: () => {
           
