@@ -59,10 +59,7 @@ ninja.data = [{
             window.location.href = "/blog/2025/jackson/";
           
         },
-      },{id: "news-site-launch",
-          title: 'Site Launch!',
-          description: "",
-          section: "News",},{id: "news-sawhill-lot-1063-adams-lot-231-recovered",
+      },{id: "news-sawhill-lot-1063-adams-lot-231-recovered",
           title: 'Sawhill Lot 1063 / Adams Lot 231 Recovered!',
           description: "The Madison Art Collection has reacquired a coin from the Sawhill and Adams Collection.",
           section: "News",handler: () => {
