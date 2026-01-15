@@ -41,5 +41,7 @@ The most recent updates for [Roman](https://jmu.emuseum.com/advancedsearch/Objec
 
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/attribution_project/parks-poster.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/attribution_project/presti_presentation.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+
 </swiper-container>
 
