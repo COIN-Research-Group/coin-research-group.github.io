@@ -6,6 +6,22 @@ img: assets/img/tracking_project/colosseum-sestertius-sawhill.jpg
 importance: 4
 category: work
 pretty_table: true
+_styles: >
+  .container {
+    max-width: 1160px !important;
+  }
+  #table th:nth-child(1),
+  #table td:nth-child(1),
+  #table th:nth-child(2),
+  #table td:nth-child(2),
+  #table th:nth-child(5),
+  #table td:nth-child(5),
+  #table th:nth-child(6),
+  #table td:nth-child(6) {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    white-space: nowrap;
+  }
 ---
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -36,17 +52,29 @@ While a boon to collectors, the sale of Sawhill's collection represents a distin
 >
   <thead>
     <tr>
-      <th data-field="1979 Sawhill Lot Number" data-sortable="true" data-align="center" data-width="5%">Lot</th>
-      <th data-field="1979 Sawhill Description" data-sortable="true" data-width="55%">Sawhill Description</th>
-      <th data-field="Provenance" data-sortable="true" data-width="32%" data-formatter="provenanceFormatter">Provenance</th>
-      <th data-field="Date Recorded" data-sortable="true" data-align="center" data-formatter="dateFormatter" data-width="5%">Date</th>
-      <th data-field="Persistent URL" data-formatter="urlFormatter" data-align="center" data-width="3%">Link</th>
-      
+      <th data-field="1979 Sawhill Lot Number" data-sortable="true" data-align="center" data-width="3%">Sawhill<br>Lot #</th>
+      <th data-field="MHS Auction Lot Number" data-sortable="true" data-align="center" data-width="3%" data-sorter="mhsLotSorter">MHS<br>Lot #</th>
+      <th data-field="1979 Sawhill Description" data-sortable="true" data-width="56%" data-halign="center">Sawhill<br>Description</th>
+      <th data-field="Provenance" data-sortable="true" data-width="31%" data-formatter="provenanceFormatter" data-halign="center">Provenance</th>
+      <th data-field="Date Recorded" data-sortable="true" data-align="center" data-formatter="dateFormatter" data-width="3%">Date</th>
+      <th data-field="Persistent URL" data-formatter="urlFormatter" data-align="center" data-width="2%">Link</th>
     </tr>
   </thead>
 </table>
 
 <script>
+function mhsLotSorter(a, b) {
+    // Push null/empty values to the end
+    if (!a && !b) return 0;
+    if (!a) return 1;
+    if (!b) return -1;
+    
+    // Convert to numbers for proper numeric sorting
+    const numA = parseFloat(a);
+    const numB = parseFloat(b);
+    return numA - numB;
+}
+
 function dateFormatter(value) {
     if (!value) return '';
     return new Date(value).toLocaleDateString('en-US', { 
