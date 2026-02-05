@@ -9,7 +9,7 @@ nav_order: 7
 profiles:
   # Faculty profiles
   - align: right
-    image: forsyth_profile.jpg
+    image: profiles/forsyth_profile.jpg
     content: #about_forsyth.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -18,7 +18,7 @@ profiles:
     more_info: >
 
   - align: left
-    image: sprague_profile.jpg
+    image: profiles/sprague_profile.jpg
     content: #about_sprague.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -27,7 +27,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: soenksen_profile_pic.jpeg
+    image: profiles/soenksen_profile_pic.jpeg
     content: #about_soenksen.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -36,7 +36,7 @@ profiles:
     more_info: >
 
   - align: left
-    image: harvey_profile.jpeg
+    image: profiles/harvey_profile.jpeg
     content: #about_harvey.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -45,7 +45,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: eva_profile.jpg
+    image: profiles/eva_profile.jpg
     content: #about_carrara.md
     image_circular: false # crops the image to make it circular
     category: faculty
@@ -55,7 +55,7 @@ profiles:
 
   # Current Students
   - align: left
-    image: trevor_profile.jpg
+    image: profiles/trevor_profile.jpg
     content: #about_schonbrun.md
     image_circular: false
     category: current students
@@ -65,7 +65,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: juliette_profile.jpeg
+    image: profiles/juliette_profile.jpeg
     content: #about_thomas.md
     image_circular: false
     category: current students
@@ -75,7 +75,7 @@ profiles:
     more_info: >
 
   - align: left
-    image: jmu_logo.jpg
+    image: profiles/jmu_logo.jpg
     content: #about_milea.md
     image_circular: false
     category: current students
@@ -86,7 +86,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: jmu_logo.jpg
+    image: profiles/jmu_logo.jpg
     content: #about_atre.md
     image_circular: false
     category: current students
@@ -96,7 +96,7 @@ profiles:
     more_info: >
 
   - align: left
-    image: lu_profile.jpg
+    image: profiles/lu_profile.jpg
     content: #about_li.md
     image_circular: false
     category: current students
@@ -107,7 +107,7 @@ profiles:
 
   # Alumni
   - align: right
-    image: greer_profile.jpg
+    image: profiles/greer_profile.jpg
     content: #about_greer.md
     image_circular: false
     category: alumni
@@ -118,7 +118,7 @@ profiles:
     more_info: >
 
   - align: left
-    image: lopresti_profile.jpg
+    image: profiles/lopresti_profile.jpg
     content: #about_lopresti.md
     image_circular: false
     category: alumni
@@ -129,7 +129,7 @@ profiles:
     more_info: >
 
   - align: right
-    image: parks_profile.jpg
+    image: profiles/parks_profile.jpg
     content: #about_parks.md
     image_circular: false
     category: alumni
