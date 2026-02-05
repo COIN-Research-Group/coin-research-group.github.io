@@ -85,6 +85,26 @@ profiles:
     category: current students
     more_info: >
 
+  - align: right
+    image: jmu_logo.jpg
+    content: #about_atre.md
+    image_circular: false
+    category: current students
+    name: Shree Atre
+    degree: Computer Science '27
+    project: "[Machine Learning for Provenance Recovery](/projects/provenance_recovery)"
+    more_info: >
+
+  - align: left
+    image: lu_profile.jpg
+    content: #about_li.md
+    image_circular: false
+    category: current students
+    name: Quinnie Lu
+    degree: Engineering '29
+    project: "[Automated Photography for Provenance Recovery](/projects/provenance_recovery)"
+    more_info: >
+
   # Alumni
   - align: right
     image: greer_profile.jpg
