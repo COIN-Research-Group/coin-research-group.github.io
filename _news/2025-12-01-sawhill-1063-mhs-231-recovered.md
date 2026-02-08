@@ -38,7 +38,7 @@ We are grateful to [Aaron Berk of Harlan J Berk Ltd.](https://www.hjbltd.com/#!/
 ### Tracking Adams, Sawhill, and BCD
 - The Massachusetts Historical Society received the collection of President John Quincy Adams and his descendants in 1914 but later sold the coins in 1971 through an auction by Stack’s [[PDF](https://archive.org/details/partimassachuset1971stac)].
 
-- Sawhill was present at the 1971 sale and purchased Lot 231 containing two coins. He received the collector’s ticket shown below. We have Sawhill’s invoice and know he paid $32.50 [[PDF](assets/pdf/sawhill-jqa-invoice.pdf)]. This is the same value listed in the Prices Realized for the auction.
+- Sawhill was present at the 1971 sale and purchased Lot 231 containing two coins. He received the collector's ticket shown below. We have Sawhill's invoice and know he paid $32.50 [[PDF](/assets/pdf/sawhill-jqa-invoice.pdf)]. This is the same value listed in the Prices Realized for the auction.
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/noble-post/mhs-lot231-ticket.jpg" class="img-fluid rounded z-depth-1 mx-auto d-block" width="30%" zoomable=true %}
     <div class="caption">
@@ -59,7 +59,7 @@ We are grateful to [Aaron Berk of Harlan J Berk Ltd.](https://www.hjbltd.com/#!/
         Description of Lot 1063 from the 1979 Sawhill Sale
     </div>
 </div>
-- BCD purchased the coin at the 1979 sale. We can determine this from the Sawhill auction clipping (“B” in the figure above) and his handwritten tag and unique Polaroids shown below. These tags and photos follow a [well-known pattern](https://conservatoricoins.com/ex-bcd-collection-bibliography/#Tags), and the $70 purchase price indicated matches the [Prices Realized](assets/pdf/sawhill-1979-prices-realized.pdf) from the 1979 Sawhill sale.
+- BCD purchased the coin at the 1979 sale. We can determine this from the Sawhill auction clipping ("B" in the figure above) and his handwritten tag and unique Polaroids shown below. These tags and photos follow a [well-known pattern](https://conservatoricoins.com/ex-bcd-collection-bibliography/#Tags), and the $70 purchase price indicated matches the [Prices Realized](/assets/pdf/sawhill-1979-prices-realized.pdf) from the 1979 Sawhill sale.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/noble-post/bcd-polaroids.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
