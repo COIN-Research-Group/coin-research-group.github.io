@@ -75,27 +75,6 @@ profiles:
     more_info: >
 
   - align: left
-    image: profiles/jmu_logo.jpg
-    content: #about_milea.md
-    image_circular: false
-    category: current students
-    name: Alice Milea-Ciobanu
-    degree: Computer Science '26
-    project: "[3D Modeling and Fabrication](/projects/modeling)"
-    category: current students
-    more_info: >
-
-  - align: right
-    image: profiles/jmu_logo.jpg
-    content: #about_atre.md
-    image_circular: false
-    category: current students
-    name: Shree Atre
-    degree: Computer Science '27
-    project: "[Machine Learning for Provenance Recovery](/projects/provenance_recovery)"
-    more_info: >
-
-  - align: left
     image: profiles/lu_profile.jpg
     content: #about_li.md
     image_circular: false
@@ -106,6 +85,28 @@ profiles:
     more_info: >
 
   # Alumni
+  - align: left
+    image: profiles/jmu_logo.jpg
+    content: #about_milea.md
+    image_circular: false
+    category: alumni
+    name: Alice Milea-Ciobanu
+    degree: "Computer Science '26"
+    project: "[3D Modeling and Fabrication](/projects/modeling)"
+    employer: ""
+    more_info: >
+
+  - align: right
+    image: profiles/jmu_logo.jpg
+    content: #about_atre.md
+    image_circular: false
+    category: alumni
+    name: Shree Atre
+    degree: "Computer Science '26"
+    project: "[Machine Learning for Provenance Recovery](/projects/provenance_recovery)"
+    employer: ""
+    more_info: >
+
   - align: right
     image: profiles/greer_profile.jpg
     content: #about_greer.md
@@ -138,4 +139,5 @@ profiles:
     project: "[Ancient Roman Numismatics](/projects/attribution)"
     employer: "Registration Assistant at Virginia Museum of Fine Arts"
     more_info: >
+
 ---
