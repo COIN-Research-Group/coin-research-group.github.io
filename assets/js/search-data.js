@@ -37,7 +37,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/black-cabinet/";
               },
-            },{id: "post-x-ray-imaging-to-identify-ancient-fakes",
+            },{id: "post-student-presentations-on-deep-metric-learning-for-coin-identification",
+        
+          title: "Student Presentations on Deep Metric Learning for Coin Identification",
+        
+        description: "Trevor Schonbrun and Dhanshrée Aire present research on ancient coin identification at regional conferences",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/student-presentations/";
+          
+        },
+      },{id: "post-x-ray-imaging-to-identify-ancient-fakes",
         
           title: "X-ray Imaging to Identify Ancient Fakes",
         
