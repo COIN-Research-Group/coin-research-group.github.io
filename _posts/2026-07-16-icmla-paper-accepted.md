@@ -4,6 +4,7 @@ date: 2026-07-16
 layout: post
 description: Our paper on using metric learning to match ancient coin images across auction catalogs has been accepted.
 categories: ["publications", "machine learning"]
+thumbnail: assets/img/coin-metric-learning/brutus-obv-hjb.jpg
 images:
   lightbox2: false
   photoswipe: false
