@@ -2,7 +2,7 @@
 layout: post
 title: Student Presentations on Deep Metric Learning for Coin Identification
 date: 2026-05-01 10:00:00
-description: Trevor Schonbrun and Dhanshrée Aire present research on ancient coin identification at regional conferences
+description: Trevor Schonbrun and Dhanshree Atre present research on ancient coin identification at regional conferences
 categories: ["provenance", "undergraduate research"]
 thumbnail: assets/img/ay25-26-presentations/poster-thumb.jpg
 images:
@@ -21,7 +21,7 @@ images:
     </div>
 </div>
 <div class="caption">
-    (Left) Trevor Schonbrun presenting at the VASEM/VirginiaAI Conference, September 2025. (Right) Dhanshrée Aire presenting at the CAPWIC Conference, March 2026.
+    (Left) Trevor Schonbrun presenting at the VASEM/VirginiaAI Conference, September 2025. (Right) Dhanshree Atre presenting at the CAPWIC Conference, March 2026.
 </div>
 
 Two undergraduate researchers from the COIN Research Group presented their work on deep metric learning for ancient coin identification at regional conferences during the 2025-26 academic year. Their research supports methods for identifying individual coins from the [Sawhill Ancient Coin Collection](https://www.jmu.edu/madisonart/_coin_collection.shtml) and matching them to auction catalogs and historical sales records. 
@@ -32,7 +32,7 @@ Trevor Schonbrun presented his research at the [Virginia Academy of Science, Eng
 
 ### CAPWIC Conference
 
-Dhanshrée Aire continued this research thread with a presentation at the [ACM Capital Area Women in Computing (CAPWIC)](https://capwic.org/) conference, held March 27-28, 2026. Her research examined methods for automating data collection and experimenting with other computer vision backbones to improve image recognition performance. Her presentation poster is available online ([PDF](/assets/pdf/shree-capwic-poster.pdf)).
+Dhanshrée Atre continued this research thread with a presentation at the [ACM Capital Area Women in Computing (CAPWIC)](https://capwic.org/) conference, held March 27-28, 2026. Her research examined methods for automating data collection and experimenting with other computer vision backbones to improve image recognition performance. Her presentation poster is available online ([PDF](/assets/pdf/shree-capwic-poster.pdf)).
 
 
 

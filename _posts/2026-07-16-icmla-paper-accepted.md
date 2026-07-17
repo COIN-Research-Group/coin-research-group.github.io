@@ -26,7 +26,7 @@ images:
     </div>
 </div>
 
-We're happy to share that our paper, "Metric Learning for Ancient Coin Identification," has been accepted for publication at the [International Conference on Machine Learning and Applications (ICMLA 2026)](https://www.icmla-conference.org/icmla26/). The authors are Nathan Sprague (Professor of Computer Science), Jason Forsyth (Associate Professor of Engineering, Curator of Coins for the Madison Art Collection), Trevor Schonbrun (Engineering '27), Shree Atre (Computer Science '26), and Quinnie Lu (Engineering '29).
+We're happy to share that our paper, "Metric Learning for Ancient Coin Identification," has been accepted for publication at the [International Conference on Machine Learning and Applications (ICMLA 2026)](https://www.icmla-conference.org/icmla26/). The authors are Nathan Sprague (Professor of Computer Science), Jason Forsyth (Associate Professor of Engineering, Curator of Coins for the Madison Art Collection), Trevor Schonbrun (Engineering '27), Dhanshrée Atre (Computer Science '26), and Quinnie Lu (Engineering '29).
 
 Establishing an ancient coin's provenance, its chain of prior ownership, usually means manually paging through decades of auction catalogs looking for a photograph of the same physical coin, and it's only done for coins deemed important enough to justify the effort. The Velia stater above is a case in point: matching its 1972 and 2023 photos took manual expert review, even though it's the exact same coin. Computer vision offers a natural fit: given a photo of a coin in hand, can a system search historical catalog imagery and surface earlier appearances of that exact specimen? 
 

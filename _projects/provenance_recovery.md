@@ -78,18 +78,18 @@ Presentation: [Augmentation Tuning Poster (PDF)](/assets/pdf/trevor-ai-summit-po
 
 ---
 
-### Dhanshrée Aire — Automated Data Collection & Alternative Backbones (2025–26)
+### Dhanshree Atre — Automated Data Collection & Alternative Backbones (2025–26)
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ay25-26-presentations/shree-capwic.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Dhanshrée Aire presenting at the CAPWIC Conference, March 2026
+            Dhanshree Atre presenting at the CAPWIC Conference, March 2026
         </div>
     </div>
 </div>
 
-Dhanshrée Aire presented at the [ACM Capital Area Women in Computing (CAPWIC)](https://capwic.org/) conference (March 27–28, 2026). Her research examined methods for automating the data collection pipeline — reducing the manual effort required to build training datasets from auction catalog scans — and experimentally compared alternative computer vision backbones to determine which architectures best capture the fine-grained visual features needed for accurate coin re-identification.
+Dhanshree Atre presented at the [ACM Capital Area Women in Computing (CAPWIC)](https://capwic.org/) conference (March 27–28, 2026). Her research examined methods for automating the data collection pipeline — reducing the manual effort required to build training datasets from auction catalog scans — and experimentally compared alternative computer vision backbones to determine which architectures best capture the fine-grained visual features needed for accurate coin re-identification.
 
 Presentation: [CAPWIC Poster (PDF)](/assets/pdf/shree-capwic-poster.pdf)
 
@@ -97,5 +97,5 @@ Presentation: [CAPWIC Poster (PDF)](/assets/pdf/shree-capwic-poster.pdf)
 
 ## News & Updates
 
-- [Trevor Schonbrun and Dhanshrée Aire Student Presentations](/blog/2026/student-presentations/)
+- [Trevor Schonbrun and Dhanshree Atre Student Presentations](/blog/2026/student-presentations/)
 - [Jackson Greer Presentation at CS Research Day](/blog/2025/jackson/)

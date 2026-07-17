@@ -101,7 +101,7 @@ profiles:
     content: #about_atre.md
     image_circular: false
     category: alumni
-    name: Shree Atre
+    name: Dhanshree Atre
     degree: "Computer Science '26"
     project: "[Machine Learning for Provenance Recovery](/projects/provenance_recovery)"
     employer: ""
