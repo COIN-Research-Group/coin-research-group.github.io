@@ -13,15 +13,10 @@ profile:
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 5 # leave blank to include all the blog posts
 ---
 
 Upon his death in 1976, Dr. John Sawhill willed his life's possessions to the James Madison University Foundation. His collection of 1,300 ancient Roman and Greek coins was eventually sold in a landmark 1979 auction which included many coins owned by President John Quincy Adams and his descendants. Over [400 coins](https://www.flickr.com/photos/203809913@N03/albums/72177720330286039) remain within the Madison Art Collection. 
