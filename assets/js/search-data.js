@@ -52,7 +52,7 @@ ninja.data = [{
         
           title: "Student Presentations on Deep Metric Learning for Coin Identification",
         
-        description: "Trevor Schonbrun and Dhanshrée Aire present research on ancient coin identification at regional conferences",
+        description: "Trevor Schonbrun and Dhanshree Atre present research on ancient coin identification at regional conferences",
         section: "Posts",
         handler: () => {
           
