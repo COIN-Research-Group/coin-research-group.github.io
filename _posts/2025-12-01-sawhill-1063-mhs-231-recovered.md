@@ -2,6 +2,7 @@
 title: "Sawhill Lot 1063 / Adams Lot 231 Recovered!"
 date: 2025-12-01
 layout: post
+featured: true
 description: The Madison Art Collection has reacquired a coin from the Sawhill and Adams Collection.
 categories: ["tracking sawhill", "acquisitions"]
 thumbnail: assets/img/noble-post/sawhill-1063-thumbnail.jpg
