@@ -37,7 +37,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/black-cabinet/";
               },
-            },{id: "post-student-presentations-on-deep-metric-learning-for-coin-identification",
+            },{id: "post-paper-accepted-at-icmla-2026-metric-learning-for-ancient-coin-identification",
+        
+          title: "Paper Accepted at ICMLA 2026: Metric Learning for Ancient Coin Identification",
+        
+        description: "Our paper on using metric learning to match ancient coin images across auction catalogs has been accepted.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/icmla-paper-accepted/";
+          
+        },
+      },{id: "post-student-presentations-on-deep-metric-learning-for-coin-identification",
         
           title: "Student Presentations on Deep Metric Learning for Coin Identification",
         
@@ -59,6 +70,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/xray-mal/";
           
         },
+      },{id: "post-sawhill-lot-1063-adams-lot-231-recovered",
+        
+          title: "Sawhill Lot 1063 / Adams Lot 231 Recovered!",
+        
+        description: "The Madison Art Collection has reacquired a coin from the Sawhill and Adams Collection.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/sawhill-1063-mhs-231-recovered/";
+          
+        },
       },{id: "post-coin-identification-with-deep-metric-learning",
         
           title: "Coin Identification with Deep Metric Learning",
@@ -70,17 +92,7 @@ ninja.data = [{
             window.location.href = "/blog/2025/jackson/";
           
         },
-      },{id: "news-sawhill-lot-1063-adams-lot-231-recovered",
-          title: 'Sawhill Lot 1063 / Adams Lot 231 Recovered!',
-          description: "The Madison Art Collection has reacquired a coin from the Sawhill and Adams Collection.",
-          section: "News",handler: () => {
-              window.location.href = "/news/2025-12-01-sawhill-1063-mhs-231-recovered/";
-            },},{id: "news-paper-accepted-at-icmla-2026-metric-learning-for-ancient-coin-identification",
-          title: 'Paper Accepted at ICMLA 2026: Metric Learning for Ancient Coin Identification',
-          description: "Our paper on using metric learning to match ancient coin images across auction catalogs has been accepted.",
-          section: "News",handler: () => {
-              window.location.href = "/news/2026-07-16-icmla-paper-accepted/";
-            },},{id: "projects-coin-attribution",
+      },{id: "projects-coin-attribution",
           title: 'Coin Attribution',
           description: "Updating the Sawhill Collection with modern numismatic references",
           section: "Projects",handler: () => {
