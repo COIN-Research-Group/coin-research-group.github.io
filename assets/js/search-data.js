@@ -81,17 +81,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/sawhill-1063-mhs-231-recovered/";
           
         },
-      },{id: "post-coin-identification-with-deep-metric-learning",
-        
-          title: "Coin Identification with Deep Metric Learning",
-        
-        description: "Jackson Greer (CS &#39;25) presents at JMU CS Research Day",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/jackson/";
-          
-        },
       },{id: "projects-coin-attribution",
           title: 'Coin Attribution',
           description: "Updating the Sawhill Collection with modern numismatic references",
