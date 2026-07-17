@@ -75,6 +75,11 @@ ninja.data = [{
           description: "The Madison Art Collection has reacquired a coin from the Sawhill and Adams Collection.",
           section: "News",handler: () => {
               window.location.href = "/news/2025-12-01-sawhill-1063-mhs-231-recovered/";
+            },},{id: "news-paper-accepted-at-icmla-2026-metric-learning-for-ancient-coin-identification",
+          title: 'Paper Accepted at ICMLA 2026: Metric Learning for Ancient Coin Identification',
+          description: "Our paper on using metric learning to match ancient coin images across auction catalogs has been accepted.",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-07-16-icmla-paper-accepted/";
             },},{id: "projects-coin-attribution",
           title: 'Coin Attribution',
           description: "Updating the Sawhill Collection with modern numismatic references",
