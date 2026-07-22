@@ -10,6 +10,7 @@ images:
   photoswipe: false
   spotlight: false
   venobox: false
+published: false
 ---
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -41,7 +42,7 @@ Our approach borrows from face recognition, training an ArcFace-based embedding 
     </div>
 </div>
 
-To evaluate this fairly, we built a new dataset of 154 coins photographed under deliberately varied lighting and reproduction conditions so that we could test the approach on realistic, controlled visual variation. Many of these coins are drawn from the [Sawhill Collection](https://www.flickr.com/photos/203809913@N03/albums/72177720330286039) at JMU, which we've already been photographing and cataloging as part of our broader provenance-recovery work, giving us a ready source of real coins with known identities to build the paired evaluation set around.
+To evaluate this fairly, we built a new dataset of 155 coins (154 photographed on both sides, plus one imaged only on the reverse) photographed under deliberately varied lighting and reproduction conditions, yielding 309 imaged coin sides and 3,708 images so that we could test the approach on realistic, controlled visual variation. Many of these coins are drawn from the [Sawhill Collection](https://www.flickr.com/photos/203809913@N03/albums/72177720330286039) at JMU, which we've already been photographing and cataloging as part of our broader provenance-recovery work, giving us a ready source of real coins with known identities to build the paired evaluation set around.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -52,7 +53,7 @@ To evaluate this fairly, we built a new dataset of 154 coins photographed under 
     </div>
 </div>
 
-Table I below summarizes our main result. Recall@k is the fraction of queries for which the correct matching coin appears somewhere in the top k retrieved results, and mAP (mean average precision) rewards ranking that correct match as close to the top as possible. Frozen off-the-shelf features (even strong ones like DINOv2) are far from sufficient for this instance-level matching task. Our public-data ArcFace model, tuned using only the small paired set for augmentation selection, closes most of that gap and comes close to a model trained directly on the paired data itself, despite never seeing the paired examples as ordinary training data.
+Table I below summarizes our main result. Recall@k is the fraction of queries for which the correct matching coin appears somewhere in the top k retrieved results, and mAP (mean average precision) rewards ranking that correct match as close to the top as possible. Frozen off-the-shelf features (even strong ones like DINOv2) are far from sufficient for this instance-level matching task. Direct paired training is the strongest approach on this controlled proxy, which is expected since it trains on the same reproduction pipeline it is tested on. Our public-data ArcFace model, tuned using only the small paired set for augmentation selection, stays competitive with roughly a three-point gap, despite never seeing the paired examples as ordinary training data.
 
 <div class="table-responsive rounded z-depth-1 mt-3 mb-3">
 <table class="table table-bordered table-striped mb-0">
@@ -61,15 +62,15 @@ Table I below summarizes our main result. Recall@k is the fraction of queries fo
 <tr><th>Method</th><th>Recall@1</th><th>Recall@5</th><th>Recall@10</th><th>mAP</th></tr>
 </thead>
 <tbody>
-<tr><td>Frozen ConvNeXt features</td><td>14.08%</td><td>22.31%</td><td>26.84%</td><td>0.2481</td></tr>
-<tr><td>DINOv2 (frozen features)</td><td>34.47%</td><td>48.70%</td><td>55.69%</td><td>0.5291</td></tr>
-<tr><td>Direct paired ArcFace training</td><td>93.94%</td><td>97.51%</td><td>98.61%</td><td>0.9793</td></tr>
-<tr class="table-warning"><td><strong>Public-data ArcFace, tuned aug. + trunc. + lighting</strong></td><td><strong>93.84%</strong></td><td><strong>97.11%</strong></td><td><strong>97.96%</strong></td><td><strong>0.9757</strong></td></tr>
+<tr><td>Frozen ConvNeXt features</td><td>15.63%</td><td>24.75%</td><td>30.18%</td><td>0.2824</td></tr>
+<tr><td>DINOv2 (frozen features)</td><td>37.30%</td><td>52.42%</td><td>60.04%</td><td>0.5723</td></tr>
+<tr><td>Direct paired ArcFace training</td><td>98.01%</td><td>99.30%</td><td>99.62%</td><td>0.9942</td></tr>
+<tr class="table-warning"><td><strong>Public-data ArcFace, tuned aug. + trunc. + lighting</strong></td><td><strong>94.57%</strong></td><td><strong>97.66%</strong></td><td><strong>98.34%</strong></td><td><strong>0.9800</strong></td></tr>
 </tbody>
 </table>
 </div>
 
-Table II isolates the effect of each design choice by testing it separately: TPE-tuned augmentation, an added lighting augmentation, and truncating the ConvNeXt backbone to preserve more of its spatial feature map. TPE-tuned augmentation drives most of the gain, pushing a standard backbone from 46.80% to 74.91% Recall@1 by targeting the specific nuisance variation in Figure 2. Truncation adds a separate benefit, preserving spatial detail that lighting augmentation alone can't exploit. The two combine for our best result, which is why the main model in Table I uses both.
+Table II isolates the effect of each design choice by testing it separately: TPE-tuned augmentation, an added lighting augmentation, and truncating the ConvNeXt backbone to preserve more of its spatial feature map. TPE-tuned augmentation drives most of the gain, pushing a standard backbone from 49.92% to 76.97% Recall@1 by targeting the specific nuisance variation in Figure 2. Truncation adds a separate benefit, preserving spatial detail that lighting augmentation alone can't exploit. Lighting augmentation on its own has little effect, and even slightly hurts the tuned standard model. The tuned augmentation and truncation combine for our best result, which is why the main model in Table I uses both. (One truncated+lighting-only configuration is still being rerun after a checkpoint was lost, so that row is marked pending below.)
 
 <div class="table-responsive rounded z-depth-1 mt-3 mb-3">
 <table class="table table-bordered table-striped mb-0">
@@ -78,14 +79,14 @@ Table II isolates the effect of each design choice by testing it separately: TPE
 <tr><th>Configuration</th><th>TPE Aug.</th><th>Lighting Aug.</th><th>Trunc.</th><th>R@1</th><th>R@5</th><th>R@10</th><th>mAP</th></tr>
 </thead>
 <tbody>
-<tr><td>Standard ConvNeXt</td><td></td><td></td><td></td><td>46.80%</td><td>60.31%</td><td>66.19%</td><td>0.6396</td></tr>
-<tr><td>Standard ConvNeXt + TPE-tuned aug.</td><td>✓</td><td></td><td></td><td>74.91%</td><td>83.75%</td><td>87.01%</td><td>0.8587</td></tr>
-<tr><td>Standard ConvNeXt + lighting aug.</td><td></td><td>✓</td><td></td><td>47.08%</td><td>60.71%</td><td>66.33%</td><td>0.6406</td></tr>
-<tr><td>Truncated ConvNeXt + manual aug.</td><td></td><td></td><td>✓</td><td>68.23%</td><td>79.83%</td><td>83.92%</td><td>0.8248</td></tr>
-<tr><td>Standard ConvNeXt + TPE-tuned + lighting aug.</td><td>✓</td><td>✓</td><td></td><td>69.92%</td><td>79.46%</td><td>83.26%</td><td>0.8192</td></tr>
-<tr><td>Truncated ConvNeXt + TPE-tuned aug.</td><td>✓</td><td></td><td>✓</td><td>93.36%</td><td>97.00%</td><td>97.90%</td><td>0.9743</td></tr>
-<tr><td>Truncated ConvNeXt + lighting aug.</td><td></td><td>✓</td><td>✓</td><td>73.70%</td><td>84.32%</td><td>88.17%</td><td>0.8675</td></tr>
-<tr class="table-warning"><td><strong>Truncated ConvNeXt + TPE-tuned + lighting aug.</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>93.84%</strong></td><td><strong>97.11%</strong></td><td><strong>97.96%</strong></td><td><strong>0.9757</strong></td></tr>
+<tr><td>Standard ConvNeXt</td><td></td><td></td><td></td><td>49.92%</td><td>63.83%</td><td>69.81%</td><td>0.6767</td></tr>
+<tr><td>Standard ConvNeXt + TPE-tuned aug.</td><td>✓</td><td></td><td></td><td>76.97%</td><td>85.83%</td><td>88.84%</td><td>0.8774</td></tr>
+<tr><td>Standard ConvNeXt + lighting aug.</td><td></td><td>✓</td><td></td><td>50.00%</td><td>64.08%</td><td>69.84%</td><td>0.6762</td></tr>
+<tr><td>Truncated ConvNeXt + manual aug.</td><td></td><td></td><td>✓</td><td>71.01%</td><td>82.24%</td><td>86.22%</td><td>0.8482</td></tr>
+<tr><td>Standard ConvNeXt + TPE-tuned + lighting aug.</td><td>✓</td><td>✓</td><td></td><td>72.11%</td><td>81.56%</td><td>85.28%</td><td>0.8397</td></tr>
+<tr><td>Truncated ConvNeXt + TPE-tuned aug.</td><td>✓</td><td></td><td>✓</td><td>94.17%</td><td>97.36%</td><td>98.29%</td><td>0.9782</td></tr>
+<tr><td>Truncated ConvNeXt + lighting aug.</td><td></td><td>✓</td><td>✓</td><td colspan="4" style="text-align:center; font-style:italic;">rerun pending&mdash;checkpoint not preserved</td></tr>
+<tr class="table-warning"><td><strong>Truncated ConvNeXt + TPE-tuned + lighting aug.</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>94.57%</strong></td><td><strong>97.66%</strong></td><td><strong>98.34%</strong></td><td><strong>0.9800</strong></td></tr>
 </tbody>
 </table>
 </div>
