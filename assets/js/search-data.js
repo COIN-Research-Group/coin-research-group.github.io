@@ -37,7 +37,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/black-cabinet/";
               },
-            },{id: "post-student-presentations-on-deep-metric-learning-for-coin-identification",
+            },{id: "post-paper-accepted-at-icmla-2026-metric-learning-for-ancient-coin-identification",
+        
+          title: "Paper Accepted at ICMLA 2026: Metric Learning for Ancient Coin Identification",
+        
+        description: "Our paper on using metric learning to match ancient coin images across auction catalogs has been accepted.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/icmla-paper-accepted/";
+          
+        },
+      },{id: "post-student-presentations-on-deep-metric-learning-for-coin-identification",
         
           title: "Student Presentations on Deep Metric Learning for Coin Identification",
         
