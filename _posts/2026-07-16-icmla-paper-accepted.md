@@ -29,9 +29,14 @@ published: true
 
 We're happy to share that our paper, "Metric Learning for Ancient Coin Identification," has been accepted for publication at the [International Conference on Machine Learning and Applications (ICMLA 2026)](https://www.icmla-conference.org/icmla26/). The authors are Nathan Sprague (Professor of Computer Science), Jason Forsyth (Associate Professor of Engineering, Curator of Coins for the Madison Art Collection), Trevor Schonbrun (Engineering '27), Dhanshree Atre (Computer Science '26), and Quinnie Lu (Engineering '29).
 
-Establishing an ancient coin's provenance, its chain of prior ownership, usually means manually paging through decades of auction catalogs looking for a photograph of the same physical coin, and it's only done for coins deemed important enough to justify the effort. The Velia stater above is a case in point: matching its 1972 and 2023 photos took manual expert review, even though it's the exact same coin. Computer vision offers a natural fit: given a photo of a coin in hand, can a system search historical catalog imagery and surface earlier appearances of that exact specimen? 
+### Background 
+Establishing an ancient coin's provenance, its chain of prior ownership, usually means manually paging through decades of auction catalogs looking for a photograph of the same physical coin. The Velia stater above is a case in point: matching its 1972 and 2023 photos took manual expert review, even though it's the exact same coin. Despite the difficulty of the task, the search may fail as historically only the most important or valuable coins were photographed for catalogs. We ask, how might computer vision be used to improve this process? Given a photo of a coin in hand, can a system search historical catalog imagery and surface earlier appearances of that exact specimen? 
 
-Our approach borrows from face recognition, training an ArcFace-based embedding model so that images of the same coin land near each other in a learned feature space. A truncated ConvNeXt backbone extracts features from each coin photo, which the ArcFace loss then shapes into that space: same-coin images pulled close together, different coins pushed apart. Matching a new photo becomes a nearest-neighbor lookup against previously embedded catalog images, rather than a manual side-by-side comparison.
+### Methods
+
+Our approach borrows from face recognition by training an ArcFace-based convolutional neural network to embedding model with a truncated ConvNeXt backbone so that images of the same coin land near each other in a learned feature space. Since most training coins come from public collections with only one photo each, we use Optuna to tune an augmentation policy (crops, rotation, color jitter, blur, and a custom relighting transform) to generate additional variations of a coin and learn how it might appear under different lighting and photographic conditions. 
+
+That paired data comes from a rig built for this project: each coin sits on cloth atop a motorized turntable inside a light box while an overhead camera records video as it rotates under a fixed light, and the extracted stills are then run through a print-scan pipeline to simulate decades of photocopying.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -40,8 +45,15 @@ Our approach borrows from face recognition, training an ArcFace-based embedding 
             Fig. 1: A catalog photo is passed through the ConvNeXt/ArcFace backbone to produce an embedding, placing same-coin images near each other in the learned feature space.
         </div>
     </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/coin-metric-learning/lightbox.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        <div class="caption">
+            The turntable and lighting rig used to photograph coins from the Sawhill Collection.
+        </div>
+    </div>
 </div>
 
+### Building the Sawhill Dataset
 To evaluate this fairly, we built a new dataset — the JMU Sawhill multi-condition dataset — of 155 coins (154 photographed on both sides, plus one imaged only on the reverse) photographed under deliberately varied lighting and reproduction conditions, yielding 309 imaged coin sides and 3,708 images so that we could test the approach on realistic, controlled visual variation. The coins are drawn from the [Sawhill Collection](https://www.flickr.com/photos/203809913@N03/albums/72177720330286039) at JMU, which we've already been photographing and cataloging as part of our broader provenance-recovery work, giving us a ready source of real coins with known identities to build the paired evaluation set around. It spans a considerably wider range than the existing public Roman Republican datasets we train on: ca. 540 BCE to 120 CE, covering 46 Greek city-states and kingdoms, 24 Roman rulers and officials, and 25 denominations in silver, bronze, and gold.
 
 <div class="row mt-3">
@@ -53,6 +65,7 @@ To evaluate this fairly, we built a new dataset — the JMU Sawhill multi-condit
     </div>
 </div>
 
+### Results
 Table I below summarizes our main result. Every method is evaluated against the same fixed gallery of 8,307 images: the 2,400 held-out coin images (200 coin sides × 12 variants each) plus 5,907 held-out public-collection images acting as distractors. Recall@k comes from a single-match task, where exactly one correct match is hidden in that gallery and Recall@k is the fraction of queries for which it lands in the top k. mAP (mean average precision) comes from a companion multi-match task, where all eleven other views of the query's coin side are in the gallery and the score rewards ranking all of them near the top. Frozen off-the-shelf features (even strong ones like DINOv2) are far from sufficient for this instance-level matching task. Direct paired training is the strongest approach on this controlled proxy, which is expected since it trains on the same reproduction pipeline it is tested on. Our public-data ArcFace model, tuned using only the small paired set for augmentation selection, stays competitive with roughly a three-point gap, despite never seeing the paired examples as ordinary training data.
 
 <div class="table-responsive rounded z-depth-1 mt-3 mb-3">
@@ -95,4 +108,4 @@ Table II isolates the effect of each design choice by testing it separately: TPE
 
 The biggest caveat is that this is still a controlled proxy. The ideal test set would be multiple independently acquired photos of the same coins from different auction houses, catalogs, and decades — but those identity links are precisely the unknown provenance evidence we're trying to recover in the first place. Our print–scan pipeline stands in for that variation; it doesn't fully reproduce it. The natural next step is to stop treating the two uses of paired data as an either/or and train on real paired examples and augmentation-generated positives together, weighting how much the model trusts a handful of verified pairs against the broader augmentation distribution.
 
-The full pipeline source code is available on [GitHub](https://github.com/COIN-Research-Group/coin-embedding), and the dataset — original images plus all reproduction variants — is published on [Hugging Face](https://huggingface.co/datasets/COIN-Research-Group/sawhill-dataset). We'll post the full paper here once it's ready for public release, and we're excited to keep pushing this pipeline toward practical provenance recovery for the collection.
+The full pipeline source code is available on [GitHub](https://github.com/COIN-Research-Group/coin-embedding), and the dataset — original images plus all reproduction variants — is published on [Hugging Face](https://huggingface.co/datasets/COIN-Research-Group/sawhill-dataset). The full paper is available for download [here](/assets/pdf/icmla-camera-ready.pdf).
