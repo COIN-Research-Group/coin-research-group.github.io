@@ -74,17 +74,18 @@ profiles:
     project: "[Lead Numismatic Intern](/projects/attribution)"
     more_info: >
 
-  - align: left
+  # Alumni
+  - align: right
     image: profiles/lu_profile.jpg
     content: #about_li.md
     image_circular: false
-    category: current students
+    category: alumni
     name: Quinnie Lu
-    degree: Engineering '29
+    degree: "Engineering '29"
     project: "[Automated Photography for Provenance Recovery](/projects/provenance_recovery)"
+    employer: ""
     more_info: >
 
-  # Alumni
   - align: left
     image: profiles/jmu_logo.jpg
     content: #about_milea.md
